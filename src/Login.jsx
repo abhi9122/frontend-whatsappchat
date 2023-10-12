@@ -28,7 +28,7 @@ const Login = () => {
       console.log("Login successful:", response.data);
       const { token } = response.data;
       localStorage.setItem("token", token);
-      window.location.href = "/chatbot";
+      window.location.href = "/";
     } catch (error) {
       console.error("Error logging in:", error);
     }
